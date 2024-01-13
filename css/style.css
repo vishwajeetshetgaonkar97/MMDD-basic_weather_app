@@ -1,0 +1,99 @@
+/* font import */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+html,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(21, 154, 215);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../Assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* weather card css  */
+.weather-info-container {
+  background-color: white;
+  width: 30vw;
+  height: 32vh;
+  margin: 2vh;
+  box-shadow: 0px 0px 8px 5px rgba(255, 255, 255, 0.596);
+  display: flex;
+  padding: 1vh;
+  flex-wrap: wrap;
+}
+
+.city,
+.weather-description {
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  background-color: rgba(96, 96, 96, 0.479);
+  text-transform: uppercase;
+}
+
+.city {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+  border: 1px solid rgba(255, 255, 255, 0.365);
+  text-shadow: 2px 2px #00000079;
+}
+
+.weather-description {
+  margin-top: -6vh;
+  height: fit-content;
+  background-color: rgba(209, 209, 209, 0.658);
+  font-size: 2vh;
+  text-shadow: 1px 1px #00000079;
+}
+
+#city1,
+#city2,
+#city3 {
+  background-image: url("../Assets/images/london-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: difference;
+  color: aliceblue;
+}
+
+#city2 {
+  background-image: url("../Assets/images/mumbai-bg.jpg");
+  background-blend-mode: darken;
+}
+
+#city3 {
+  background-blend-mode: multiply;
+}
+
+.weather-icon {
+  height: 5vh;
+  border: 1px;
+  border-radius: 5%;
+  background-color: rgba(240, 248, 255, 0.379);
+}
+
+.temp {
+  height: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90%;
+  padding-top: 1vh;
+}
